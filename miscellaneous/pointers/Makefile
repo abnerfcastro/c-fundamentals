@@ -22,5 +22,12 @@ structs: pointers-structs.o
 pointers-structs.o: pointers-structs.c
 	$(CC) $(CFLAGS) -c pointers-structs.c
 
+# Compiling pointers-structs
+functions: pointers-functions.o
+	$(CC) $(CFLAGS) pointers-functions.o -o functions
+
+pointers-functions.o: pointers-functions.c
+	$(CC) $(CFLAGS) -c pointers-functions.c
+
 clean:
 	rm -f *.o *.exe

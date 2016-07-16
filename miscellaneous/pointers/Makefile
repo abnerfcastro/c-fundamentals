@@ -3,7 +3,7 @@ CFLAGS = -Wall -std=c99
 
 # Compiling pointers-basics
 basics: pointers-basics.o
-	$(CC) $(CFLAGS) pointers-basics.o -o pointers-basics
+	$(CC) $(CFLAGS) pointers-basics.o -o basics
 
 pointers-basics.o: pointers-basics.c
 	$(CC) $(CFLAGS) -c pointers-basics.c

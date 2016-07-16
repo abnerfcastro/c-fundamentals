@@ -45,17 +45,13 @@ int main()
         printf("int_array[%d] = %d\n", i, int_array[i]);
     }
 
+    // We can also use the function realloc
+    // It allocates more memory when necessary, but maintains the previous values
     int_array = realloc(int_array, 5 * sizeof(int));
     int_array[4] = 500;
     for (size_t i = 0; i < 5; i++) {
         printf("int_array[%d] = %d\n", i, int_array[i]);
     }
-
-    printf("Size of int_array: %d\n", sizeof(int_array));
-
-    int* pointer;
-    pointer[0] = 1;
-    printf("%d\n", pointer[0]);
 
     free(int_array);
 

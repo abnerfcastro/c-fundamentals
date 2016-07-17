@@ -1,3 +1,12 @@
+# Instructions
+
+To build and compile, type these commands in the terminal:
+
+```
+$ make
+$ .\strings.exe
+```
+
 # Strings
 
 A string is a series of characters treated as a single unit. A string may include letters, digits and various special characters such as +, -, \* and $. In C, they are written in double quotations, like

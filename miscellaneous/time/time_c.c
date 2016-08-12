@@ -9,14 +9,23 @@
 #include <time.h>       // time_t, ctime
 #include <limits.h>     // MAX_INT
 
+static inline void days_since_beginning();
 static inline void time_your_program();
 static inline void when_time_t_wrap_around();
 
 int main()
 {
+    days_since_beginning();
     time_your_program();
     when_time_t_wrap_around();
     return 0;
+}
+
+static inline void days_since_beginning()
+{
+    time_t seconds;
+    seconds = time(NULL);
+    printf("Days since January 1, 1970 = %d\n", seconds/3600/24);
 }
 
 static inline void time_your_program()

@@ -18,6 +18,6 @@ It can be used as a stopwatch to time your program's execution. In file `time.c`
 ```C
 clock_t start, end;
 start = clock();
-\\ some code runs here...
+// some code runs here...
 end = clock();
 ```

@@ -15,7 +15,7 @@ The C library function `clock_t clock(void)` returns the number of clock ticks e
 
 It can be used as a stopwatch to time your program's execution. In file `time.c`, there's a function called `time_your_program()` that makes use of `clock_t` and `clock()` to time how long a loop that counts `0` to `+2147483647` (`INT_MAX`) takes to run.
 
-```
+```C
 clock_t start, end;
 start = clock();
 \\ some code runs here...

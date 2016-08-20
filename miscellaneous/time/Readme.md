@@ -9,7 +9,22 @@ $ .\time_c.exe
 
 ## Using `time.h`
 
-### `time_t`, `tm` and `time()`
+### `time_t`, `struct tm` and `time()`
+
+Function `time()` is defined as follows:
+
+```C
+time_t time(time_t *timer);
+```
+
+It gets the current calendar time as a value of type `time_t`. If the argument is not a *null pointer*, it also sets this value to the object pointed by `timer`. So the object pointed by `timer` is modified. The value returned generally represents the number of seconds since 00:00 hours, Jan 1, 1970 UTC. Thus, the function may be called in both ways:
+
+```C
+time_t time_value;
+time(&time_value);
+// or like this...
+time_value = time(NULL);
+```
 
 ### `clock_t` and `clock()`
 

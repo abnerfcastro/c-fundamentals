@@ -21,10 +21,13 @@ It gets the current calendar time as a value of type `time_t`. If the argument i
 
 ```C
 time_t time_value;
+
 time(&time_value);
 // or like this...
 time_value = time(NULL);
 ```
+
+
 
 ### `clock_t` and `clock()`
 

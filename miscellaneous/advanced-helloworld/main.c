@@ -37,7 +37,7 @@ void portuguese(const char *name)
     printf("Ola mundo! Bem-vindo, %s\n", name);
 }
 
-void dutch(const char* name)
+void dutch(const char *name)
 {
     printf("Hallo Wereld! Welkom, %s\n", name);
 }

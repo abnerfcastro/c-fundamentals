@@ -2,10 +2,10 @@ CC = gcc
 CFLAGS = -Wall -std=c99
 
 all: main.o
-	$(CC) $(CFLAGS) main.o -o advanced-helloworld
+	$(CC) $(CFLAGS) main.o -o advanced-helloworld.out
 
 main.o: main.c
 	$(CC) $(CFLAGS) -c main.c
 
 clean:
-	rm -f *.o *.exe
+	rm -f *.o *.exe *.out
